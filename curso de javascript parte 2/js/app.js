@@ -96,9 +96,9 @@
 
 
 //? Funcion expresada
-const numAzar = function(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min
-}
+// const numAzar = function(min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min
+// }
 // console.log(numAzar(100, 201))
 
 
@@ -122,4 +122,240 @@ const numAzar = function(min, max) {
 //     console.log(`${index} : ${fruta}`)
 //     // console.log(array)
 // })
+
+
+//? Objeto literal
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros']
+// }
+
+// console.log(gato.nombre)
+// console.log(gato['nombre'])
+// console.log(gato.duerme)
+// console.log(gato['enemigos'][0]) 
+// console.log(gato.enemigos[0])
+
+//? CRUD
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros']
+// }
+
+// // CREATE
+// gato.color = 'azul'
+
+// // UPDATE
+// gato.edad = 5
+
+// // DELETE
+// delete gato.duerme
+
+// // REED
+// console.log(gato)
+
+
+//? hasOwnProperty
+
+// console.log(gato.hasOwnProperty('edaddos'))
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros']
+// }
+
+// if(gato.hasOwnProperty('nombre')){
+//     gato.nombre = 'flojera'
+// }
+
+// console.log(gato)
+
+
+//? Objetos anidados
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     otros: {
+//         amigos: ['cobarde', 'timido'],
+//         favoritos:{
+//             comida: {
+//                 frio: 'salmon',
+//                 caliente: 'pollo'
+//             },
+//         }
+//     }
+// }
+
+// console.log(gato.otros.favorito?.comida.frio)
+// console.log(gato.otros.amigos[0])
+
+
+//? Encadenamiento opcional
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     otros: {
+//         amigos: ['cobarde', 'timido'],
+//         favoritos:{
+//             comida: {
+//                 frio: 'salmon',
+//                 caliente: 'pollo'
+//             },
+//         }
+//     }
+// }
+
+// console.log(gato.otros.favorito?.comida.frio)
+
+
+//? Propiedades, metodos y this
+
+// Las propiedades no lleva parentesis.
+// Los metodos llevan parentesis.
+
+// const amigos = ['cobarde', 'timido'];
+// console.log(amigos.length)
+// console.log(amigos.push())
+
+// const nombre = 'bluuweb'
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     comer: (alimento) => {
+//         console.log(`
+//             ${this.nombre} está comiendo ${alimento}
+//         `)
+//     },
+//     listarEnemigos(){
+//         this.enemigos.forEach( (item) => console.log(item))
+//     }
+// }
+
+// gato.listarEnemigos()
+
+
+//? Recorrer un objeto (for... in)
+
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+// }
+
+// for(let propiedad in gato) {
+//     console.log(gato[propiedad])
+// }
+
+
+//? Object.values()
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+// }
+
+// console.log(Object.values(gato))
+// Object.values(gato).forEach( item => console.log(item))
+
+
+//? Destructuring Objects
+// Alias, Por defecto, anidados y metodos.
+
+// const nombre = 'bluuweb'
+
+// const gato = {
+//     // nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     otros: {
+//         amigos: ["Cobarde", "Tímido", "Pegajoso"],
+//         favoritos: {
+//             comida: {
+//                 fria: "salmón",
+//                 caliente: "pollo",
+//             },
+//         },
+//     },
+// }
+
+// // const {amigos: amigosArray} = gato.otros
+
+// const amigosArray = ["Cobarde", "Tímido", "Pegajoso"]
+
+// const [aUno, aDos, aTres, aCuatro = 'No existe'] = amigosArray
+
+// console.log(aCuatro)
+
+
+// metodos
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     comer(comida) {
+//         return `${this.nombre} está comiendo ${comida}`;
+//     },
+//     mostrarEnemigos() {
+//         return this.enemigos.forEach((item) => console.log(item));
+//     },
+// }
+
+// const {comer} = gato
+
+// console.log(comer('pez'))
+
+
+//? Getter y Setter
+
+// const gato = {
+//     nombre: 'valiente',
+//     duerme: true,
+//     edad: 10,
+//     enemigos: ['agua', 'perros'],
+//     get nombreMayuscula() {
+//         return this.nombre.toUpperCase()
+//     },
+//     set agregarEnemigo(nuevoEnemigo) {
+//         this.enemigos.push(nuevoEnemigo)
+//     }
+// }
+
+// console.log(gato.nombreMayuscula)
+// gato.agregarEnemigo = 'Batman'
+
+// console.log(gato)
+
+
+//? Por valor vs por referencia
+
+// let a = {nombre: 'hola'}
+// let b = a
+
+// a.nombre = 'chao'
+
+// console.log(b)
 
