@@ -61,13 +61,13 @@
 // h1.style.color = 'white';
 // console.log(h1.textContent)
 
-const h1 = document.getElementById('tituloWeb')
-const boton = document.querySelector('.btn-primary')
+// const h1 = document.getElementById('tituloWeb')
+// const boton = document.querySelector('.btn-primary')
 
-boton.addEventListener('click', () => {
-    console.log('me diste click!')
-    h1.textContent = 'texto desde js'
-    h1.style.color = 'red'
-})
+// boton.addEventListener('click', () => {
+//     console.log('me diste click!')
+//     h1.textContent = 'texto desde js'
+//     h1.style.color = 'red'
+// })
 
 
