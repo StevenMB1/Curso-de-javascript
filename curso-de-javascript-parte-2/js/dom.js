@@ -36,5 +36,38 @@
 
 //? querySelector vs getElementById
 
+// Es poquito mas rapido
+// console.log(document.getElementById('#tituloWeb')) 
+
+// mas lento por menos
+// console.log(document.querySelector('.text-primary'))
+
+
+//? element 
+
+// const h1 = document.getElementById("tituloWeb")
+
+// h1.textContent = "Nuevo texto desde js"
+// h1.style.backgroundColor = 'red';
+// h1.style.color = 'white';
+// console.log(h1.textContent)
+
+//? Eventos (addEventListener)
+
+// const h1 = document.getElementById("tituloWeb")
+
+// h1.textContent = "Nuevo texto desde js"
+// h1.style.backgroundColor = 'red';
+// h1.style.color = 'white';
+// console.log(h1.textContent)
+
+const h1 = document.getElementById('tituloWeb')
+const boton = document.querySelector('.btn-primary')
+
+boton.addEventListener('click', () => {
+    console.log('me diste click!')
+    h1.textContent = 'texto desde js'
+    h1.style.color = 'red'
+})
 
 
