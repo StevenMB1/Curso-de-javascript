@@ -71,3 +71,20 @@
 // })
 
 
+//? createElement
+
+const lista = document.querySelector('#lista')
+
+const li = document.createElement('li')
+li.textContent = 'Elemento desde js'
+console.log(li)
+
+// Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado.
+
+lista.appendChild(li)
+
+
+const h2 = document.createElement('h2')
+h2.textContent = 'Titulo del sitio web'
+
+lista.appendChild(h2)
