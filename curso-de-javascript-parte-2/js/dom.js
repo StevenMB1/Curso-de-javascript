@@ -73,18 +73,21 @@
 
 //? createElement
 
-const lista = document.querySelector('#lista')
+// const lista = document.querySelector('#lista')
 
-const li = document.createElement('li')
-li.textContent = 'Elemento desde js'
-console.log(li)
+// const arrayPaises = ['Peru', 'Bolivia', 'Colombia']
 
-// Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado.
+// arrayPaises.forEach( pais => {
+//     const li = document.createElement('li')
+//     li.textContent = pais
+//     lista.appendChild(li)
+// })
 
-lista.appendChild(li)
+// // arrayPaises.forEach(pais => {
+// //     lista.innerHTML += `<li>${pais}</li>`
+// // })
 
 
-const h2 = document.createElement('h2')
-h2.textContent = 'Titulo del sitio web'
+//? Fragment
 
-lista.appendChild(h2)
+
