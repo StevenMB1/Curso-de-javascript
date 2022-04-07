@@ -88,6 +88,77 @@
 // // })
 
 
-//? Fragment
+//? Fragment / insertBefore
+
+// const lista = document.querySelector('#lista')
+
+// const arrayPaises = ['Peru', 'Mexico', 'Colombia']
+
+// const fragment = document.createDocumentFragment()
+// // const fragment = new DocumentFragment()
+
+// arrayPaises.forEach( pais => {
+//     const newNode = document.createElement('li')
+//     newNode.textContent = pais
+
+//     const referenceNode = fragment.firstChild
+    
+//     fragment.insertBefore(newNode, referenceNode)
+// })
+
+// lista.appendChild(fragment)
+
+//todo Practica
+
+// const lista = document.querySelector('#lista')
+
+// const arrayPaises = ['Peru', 'Mexico', 'Colombia']
+
+// const fragment = document.createDocumentFragment()
+
+// {/* <li class="list">
+//     <b>Pais:</b>
+//     <span class="text-primary">Aqui va el pais</span>
+// </li> */}
+
+// arrayPaises.forEach( pais => {
+
+//     const li = document.createElement('li')
+//     li.className = 'lista'
+
+//     const b = document.createElement('b')
+//     b.textContent = 'Pais: '
+
+//     const span = document.createElement('span')
+//     span.className = 'text-primary'
+//     span.textContent = pais
+
+//     li.appendChild(b)
+//     li.appendChild(span)
+    
+//     fragment.appendChild(li)
+
+// })
+
+// lista.appendChild(fragment)
 
 
+//todo practica hecha mas simple con innerHTML
+
+// const lista = document.querySelector('#lista')
+
+// const arrayPaises = ['Peru', 'Mexico', 'Colombia']
+
+// const fragment = document.createDocumentFragment()
+
+// arrayPaises.forEach( pais => {
+//     lista.innerHTML += `
+//         <li class="list">
+//             <b>Pais:</b>
+//             <span class="text-primary">${pais}</span>
+//         </li>
+//     `
+// })
+
+
+//? Template
