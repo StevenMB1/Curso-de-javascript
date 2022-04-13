@@ -15,6 +15,22 @@ const agregarAlCarrito = (e) => {
     }
 
     carritoObjeto[producto.titulo] = producto
+
+    pintarCarrito(producto)
+}
+
+const pintarCarrito = (producto) => {
+    
+    object.values(carritoObjeto).forEach(item => {
+        const clone = template.content.firstElementChild().cloneNode(true)
+        clone.querySelector('.lead').textContent = item.titulo
+        clone.querySelector('.badge').textContent = item.cantidad
+
+        fragment.appendChild(clone)
+    })
+
+    carrito.appendChild(fragment)
+    
 }
 
 botones.forEach( btn => btn.addEventListener('click', agregarAlCarrito))
