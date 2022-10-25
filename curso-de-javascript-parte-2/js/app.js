@@ -533,20 +533,20 @@
 //TODO es una promesa que viene en JSON, nosotros la transformamos y luego 
 //TODO volvemos a leer la informacion.
 
-fetch('https://rickandmortyapi.com/api/character')
-    // Aca devolvemos el json
-    .then( res => {
-        return res.json()   // le desimos que nos de la repuesta en formato json.
-    })
+// fetch('https://rickandmortyapi.com/api/character')
+//     // Aca devolvemos el json
+//     .then( res => {
+//         return res.json()   // le desimos que nos de la repuesta en formato json.
+//     })
     
-    // hacemos otro then porque Ahora tenemos que devolver la data.
-    .then( data => {    // Aqui obtenemos la data.
-        console.log(data.results)
-        data.results.forEach(element => {
-            console.log(element.name)
-        });
-    })
-    .catch( error => console.log(error) )
+//     // hacemos otro then porque Ahora tenemos que devolver la data.
+//     .then( data => {    // Aqui obtenemos la data.
+//         console.log(data.results)
+//         data.results.forEach(element => {
+//             console.log(element.name)
+//         });
+//     })
+//     .catch( error => console.log(error) )
 
 
 //TODO simplificacin de las funciones
