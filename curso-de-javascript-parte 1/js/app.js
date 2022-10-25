@@ -79,7 +79,6 @@
 // console.log(sumar(numUno, numDos))
 
 
-
 // function sumar (n1, n2) {
 //     return 'El resultado de la suma es: ' + n1 + n2
 // }
